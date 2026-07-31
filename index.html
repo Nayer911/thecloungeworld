@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The C Lounge</title>
+
+<!-- Fonts: Cinzel for the display serif headline, Montserrat for the fine letter-spaced labels -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="icon" href="logo-c.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- luxury cinematic intro / loading fade -->
+<div class="loader" aria-hidden="true">
+  <img src="logo-c.png" alt="" class="loader__logo">
+  <div class="loader__line"></div>
+</div>
+
+<div class="scene">
+
+  <!-- background photo (car / jet / skyline) -->
+  <div class="scene__bg"></div>
+
+  <!-- soft vignette so the copy stays legible -->
+  <div class="scene__overlay"></div>
+
+  <!-- drifting gold specks over the map area, purely decorative -->
+  <canvas id="stars"></canvas>
+
+  <main class="content">
+
+    <div class="content__inner">
+
+      <!-- logo -->
+      <div class="logo reveal" style="--d:0s">
+        <img src="logo-c.png" alt="C — logo" class="logo__mark">
+      </div>
+
+      <!-- headline -->
+      <h1 class="headline reveal" style="--d:.15s">Stay Tuned</h1>
+
+      <div class="rule reveal" style="--d:.3s"></div>
+
+      <p class="subhead reveal" style="--d:.4s">We Are Coming Very Soon</p>
+
+      <p class="lede reveal" style="--d:.5s">
+        A new world of luxury experiences is on the way.<br>
+        Exclusivity. Precision. Perfection.<br>
+        Designed for those who expect more.
+      </p>
+
+      <div class="rule rule--diamond reveal" style="--d:.6s">
+        <span class="rule__diamond"></span>
+      </div>
+
+      <!-- services -->
+      <ul class="services reveal" style="--d:.7s">
+        <li class="services__item">
+          <img class="services__icon" src="icon-tux.png" alt="" aria-hidden="true">
+          <span>VIP Services</span>
+        </li>
+        <li class="services__divider" aria-hidden="true"></li>
+        <li class="services__item">
+          <img class="services__icon" src="icon-car.png" alt="" aria-hidden="true">
+          <span>Luxury<br>Transportation</span>
+        </li>
+        <li class="services__divider" aria-hidden="true"></li>
+        <li class="services__item">
+          <img class="services__icon" src="icon-jet.png" alt="" aria-hidden="true">
+          <span>Private Aviation</span>
+        </li>
+        <li class="services__divider" aria-hidden="true"></li>
+        <li class="services__item">
+          <img class="services__icon" src="icon-bell.png" alt="" aria-hidden="true">
+          <span>Lifestyle<br>Concierge</span>
+        </li>
+      </ul>
+
+      <p class="tagline reveal" style="--d:.85s">Worldwide. 24/7. Always With Excellence.</p>
+
+      <button class="cta reveal" type="button" style="--d:1s">
+        <span>The Experience Is Coming</span>
+      </button>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
