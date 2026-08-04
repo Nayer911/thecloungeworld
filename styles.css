@@ -131,6 +131,8 @@ body{
   display:flex;
   flex-direction:column;
   align-items:center;
+  transform: translateY(-70px) scale(0.7);
+  transform-origin: center;
 }
 .reveal{
   opacity:0;
